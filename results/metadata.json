@@ -1,0 +1,40 @@
+{
+  "config": {
+    "n_synthetic_per_corpus": 5000,
+    "n_corpora": 3,
+    "classifier_seeds": 30,
+    "transformer_seeds": 3,
+    "vllm_prompts_per_batch": 128,
+    "headlines_per_prompt": 4,
+    "max_new_tokens": 60,
+    "temperature": 0.6,
+    "top_p": 0.8,
+    "gpu_memory_utilization": 0.85,
+    "test_size": 0.2,
+    "split_seed": 42,
+    "noninf_margin": 0.02,
+    "equivalence_margin": 0.02,
+    "n_bootstrap": 10000,
+    "generator_models": [
+      "Qwen/Qwen2.5-7B-Instruct",
+      "microsoft/Phi-3.5-mini-instruct",
+      "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+    ],
+    "llm_classifier_model": "Qwen/Qwen2.5-7B-Instruct",
+    "transformer_classifiers": [
+      "distilbert-base-uncased",
+      "roberta-base",
+      "microsoft/deberta-v3-base"
+    ],
+    "transformer_batch_size": 64,
+    "transformer_max_len": 64,
+    "transformer_epochs": 2,
+    "num_workers": 0
+  },
+  "n_samples": 23196,
+  "n_fake": 5755,
+  "n_real": 17441,
+  "train_idx_hash": "22b490eeead464370501264371f5fe0d",
+  "test_idx_hash": "c9b93325df2944c4105fcbe23c28e37a",
+  "timestamp": "2026-10-05T02:55:30.921869"
+}
